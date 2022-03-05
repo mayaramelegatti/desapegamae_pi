@@ -1,0 +1,409 @@
+/* Importação (Google Fonts) */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
+
+/*CSS Reset */
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Quicksand';
+    font-size: 1em;
+}
+
+
+/* Layout */
+.Container{
+    margin: 0 auto; /*centralizar conteúdo*/
+}
+
+.Container2{
+    margin: 0 auto; /*centralizar conteúdo*/
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #F5A598;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+#logo img{
+    height: 150px;
+    width: 150px;
+}
+
+
+.disponivel-texto{
+    background-color: #F5A598;
+    text-align: center;
+    color:#fff;
+}
+
+.disponivel-texto2{
+    background-color:#F5A598;
+    text-align: center;
+    color:#ffffff;
+}
+
+.disponivel-texto3{
+    background-color: #7ABFB3;
+    text-align: center;
+    color:#ffffff;
+}
+/* cards */
+.cards-dispo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.cards-dispo .card{
+    margin: 5px 10px;
+    min-height: 500px;
+    
+}
+
+/*Voltar ao Topo do Site */
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    
+}
+
+/*Rodapé*/
+
+h6{
+    background-color: #bababa;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+/* Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/*Cabeçalho*/
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+}
+/*menu responsivo */
+#check{
+    display: none;
+}
+
+label {
+    font-size: 3rem;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
+
+}
+
+nav ul {
+    list-style: none;
+    background-color: #F5A598;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+     
+}
+
+#check:checked ~ul{
+    right: 0;
+
+}
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #7ABFB3;
+}
+.texto{
+    text-decoration: none;
+    color: #7ABFB3;
+    
+}
+.texto:hover{
+    color:#F5A598;
+}
+
+.texto2{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F5A598;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+.texto2:hover{
+color: rgb(107, 107, 107);
+}
+
+/* Destaque */
+.foto1{
+    height:75vh;
+    background: url(img/22.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.foto2{
+    height:75vh;
+    background: url(img/dispo.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.foto3{
+    height:75vh;
+    background: url(img/meninos.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.foto4{
+    height:75vh;
+    background: url(img/meninas.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+main h1{
+    font-size: 2.5em;
+}
+
+main h2{
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+
+/*formulário */
+
+.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+   
+}
+.formulario h1{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+    
+
+}
+.field .label2, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox .label2{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+.form-control,
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #F5A598;
+    color: #fff;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Phone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width:576px){
+    .Container{
+        max-width: 540px;
+    }
+}
+/* Destaque */
+
+main h1, main h2{
+    text-shadow: #000 0.05em 0.05em 0.05em;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+   
+    flex-wrap: wrap;
+}
+
+.container div{
+    flex: 1 1 300px;
+    
+}
+.bloco{
+    margin-top: 35px;
+    padding: 5px;
+    width:30%;
+    height: 300px;
+    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #7ABFB3;
+ 
+}
+
+
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:768px){
+    .Container{
+        max-width: 720px;
+    }
+
+/* Destaque */
+main{ height: 45vh;
+}
+main h1{
+    font-size: 5.5em;
+}
+main h2{
+    font-size: 2em;
+}
+}
+/* Tablet Landscape */
+@media (min-width:992px){
+       .Container{
+        max-width: 960px;
+    }
+/* Destaque */
+main{
+    height: 70vh;
+}
+
+}
+
+/*PC */
+@media (min-width:1200px){
+ .Container{
+    max-width: 1140px;
+}
+/*Cabeçalho*/
+    header{
+        height: 120px;
+    }
+    #logo img{
+        width: 200px;
+        height:200px;
+    }
+/*menu*/
+label{
+    display: none;
+}
+nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li {
+    float: left;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a {
+    color: #F5A598;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #7ABFB3;
+    font-family: 'Quicksand', sans-serif;
+}
+}
